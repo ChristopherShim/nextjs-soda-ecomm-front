@@ -22,12 +22,13 @@ export default async function handler(req,res) {
   for (const productId of uniqueIds) {
     const productInfo = productsInfos.find(p => p._id.toString() === productId);
     const quantity = productsIds.filter(id => id === productId)?.length || 0;
+    const itemId = productInfo._id;
     if (quantity > 0 && productInfo) {
       line_items.push({
         quantity,
+        itemId,
         price_data: {
           currency: 'USD',
-          itemId: productInfo._id,
           product_data: {name:productInfo.title},
           unit_amount: productInfo.price * 100,
         },
