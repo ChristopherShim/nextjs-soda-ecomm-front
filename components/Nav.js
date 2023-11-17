@@ -30,8 +30,8 @@ export default function Nav() {
           </li>
           <li className="px-[4px] py-[10px]">
             <Link
-              href="/shop"
-              className={pathname === "/shop" ? activeLink : inactiveLink}
+              href="/products/"
+              className={pathname === "/products" ? activeLink : inactiveLink}
             >
               Shop
             </Link>

@@ -1,8 +1,13 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { CartContext } from "../CartContext";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function HomeProduct({ product }) {
   const { addProduct } = useContext(CartContext);
+  const router = useRouter()
+ 
+  const url = '/product/';
 
   function addItemToCart(productId) {
     addProduct(productId);
@@ -25,12 +30,12 @@ export default function HomeProduct({ product }) {
                     </div>
                   </div>
                   <div className="px-[px] py-4 mx-auto inset-x-0 text-center">
-                    <button
-                      onClick={()=>addItemToCart(p._id)}
+                    <Link
+                      href={url+p._id}
                       className="shopLink text-lg text-center text-black"
                     >
                       {p.title}
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </li>

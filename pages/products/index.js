@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ratingSVG from "../assets/rating.svg";
+import ratingSVG from "@/assets/rating.svg";
 import Script from "next/script";
 import React from "react";
 
