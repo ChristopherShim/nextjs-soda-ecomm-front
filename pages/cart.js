@@ -82,10 +82,11 @@ export default function CartPage() {
                   {products.map((product) => (
                     <tr>
                       <td>
-                        {product.title}
+                        
                         <div className="productImageBox">
                           <img src={product.images}></img>
                         </div>
+                        {product.title}
                       </td>
                       <td>
                         <button
@@ -104,9 +105,9 @@ export default function CartPage() {
                       </td>
                       <td>
                         $
-                        {product.price *
+                        {(product.price *
                           cartProducts.filter((id) => id === product._id)
-                            .length}
+                            .length).toFixed(2)}
                       </td>
                     </tr>
                   ))}

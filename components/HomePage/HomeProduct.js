@@ -5,9 +5,13 @@ import Link from "next/link";
 
 export default function HomeProduct({ product }) {
   const { addProduct } = useContext(CartContext);
+
   const router = useRouter()
+
+  function goToProductHandler(p){
+    router.push("/product/" + p._id)
+  }
  
-  const url = '/product/';
 
   function addItemToCart(productId) {
     addProduct(productId);
@@ -30,12 +34,13 @@ export default function HomeProduct({ product }) {
                     </div>
                   </div>
                   <div className="px-[px] py-4 mx-auto inset-x-0 text-center">
-                    <Link
-                      href={url+p._id}
+                    <button
+                      // href={url+p._id}
+                      onClick={()=>goToProductHandler(p)}
                       className="shopLink text-lg text-center text-black"
                     >
                       {p.title}
-                    </Link>
+                    </button>
                   </div>
                 </div>
               </li>

@@ -38,7 +38,7 @@ export default function Footer(){
                 </form>
               </div>
               <div className="mt-[3rem]">
-                <p className="my-[1rem]">VAE LABS</p>
+                <p className="my-[1rem]">Sopop</p>
                 <div className="flex flex-wrap gap-[6rem]">
                   <div>
                     <ul>

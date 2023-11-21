@@ -1,9 +1,17 @@
 import Image from "next/image";
 import ratingSVG from "@/assets/rating.svg";
 import Script from "next/script";
-import React from "react";
+import { CartContext } from "../CartContext";
+import { useContext } from "react";
+import { useDispatch } from "react-redux";
 
-export default function Shop() {
+export default function ShopLayout({products}) {
+  const { addProduct } = useContext(CartContext);
+  const dispatch = useDispatch()
+
+  function addItemToCart(productId) {
+    addProduct(productId);
+  }
   return (
     <section>
       <div className="max-w-[80rem] mx-auto p-[0.5rem] py-[60px]">
@@ -11,8 +19,8 @@ export default function Shop() {
           <div className="max-w-[45%] w-[45%]">
             <div>
               <img
-                src="https://vaelabs.com/cdn/shop/files/Mint-box-and-bottle-smaller-square_778d4770-269a-4107-8148-15c6f461a717.webp?v=1697498832&width=1100"
-                className="h-[500px] w-full object-cover"
+                src={products[0].images}
+                className="h-[500px] w-full object-contain"
               ></img>
             </div>
           </div>
@@ -22,7 +30,7 @@ export default function Shop() {
                 <Image src={ratingSVG}></Image>
               </div>
               <div className="my-[1.5rem]">
-                <h1 className="text-[56px]">Sopop Soda</h1>
+                <h1 className="text-[56px]">{products[0].title}</h1>
               </div>
               <div className="my-[1.5rem]">
                 Experience new flavors - 5x better than competing brands. Each
@@ -63,14 +71,26 @@ export default function Shop() {
               <div className="flex justify-between my-[1.5rem]">
                 <div className="flex basis-[45%] p-0 mb-[1.2rem] max-w-[44rem]">
                   <div className="max-w-full flex relative w-full">
-                    <select className=" w-full h-[2.5rem] border-solid border-[1px] border-[#444]] rounded-[60px] px-[1rem] bg-[#29292a]">
-                      <option>Strawberry Kiwi</option>
-                      <option>Passion Punch</option>
-                      <option>Lemon Zest</option>
+                    <select
+                      onChange={(e) => setSelectedItem(e.target.value)}
+                      className=" w-full h-[2.5rem] border-solid border-[1px] border-[#444]] rounded-[60px] px-[1rem] bg-[#29292a]"
+                    >
+                      {products.map((p) => (
+                        <option key={p._id} value={p._id}>
+                          {p.title}
+                        </option>
+                      ))}
                     </select>
                   </div>
                 </div>
               </div>
+              <button
+                onClick={() => addItemToCart(products[0]._id)}
+                className="button-primary"
+              >
+                {" "}
+                Add To Cart
+              </button>
             </div>
           </div>
         </div>
