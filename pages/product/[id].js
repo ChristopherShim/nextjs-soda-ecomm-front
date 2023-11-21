@@ -4,14 +4,26 @@ import { CartContext } from "@/components/CartContext";
 import ratingSVG from "@/assets/rating.svg";
 import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";
-import { useContext, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function ProductPage({product}) {
+  const router = useRouter()
+  const [optionValue, setOptionValue] = useState(product.title)
   const { addProduct } = useContext(CartContext);
-  
+
   function addItemToCart(productId) {
     addProduct(productId);
   }
+
+  // if (optionValue === "strawberry kiwi"){
+  //   router.push("/product/" + "6541ea9d53222b62576a57af");
+  // } else if(optionValue === "passion punch"){
+  //   router.push("/product/" + "6541ebb69d3ea6230a181415");
+  // } else {
+  //   router.push("/product/" + "6541ebc39d3ea6230a18141b");
+  // }
+
   return (
     <section>
       <div className="max-w-[80rem] mx-auto p-[0.5rem] py-[60px]">
@@ -71,10 +83,10 @@ export default function ProductPage({product}) {
               <div className="flex justify-between my-[1.5rem]">
                 <div className="flex basis-[45%] p-0 mb-[1.2rem] max-w-[44rem]">
                   <div className="max-w-full flex relative w-full">
-                    <select className=" w-full h-[2.5rem] border-solid border-[1px] border-[#444]] rounded-[60px] px-[1rem] bg-[#29292a]">
-                      <option>Strawberry Kiwi</option>
-                      <option>Passion Punch</option>
-                      <option>Lemon Zest</option>
+                    <select className=" w-full h-[2.5rem] border-solid border-[1px] border-[#444]] rounded-[60px] px-[1rem] bg-[#29292a]" onChange={e => setOptionValue(e.target.value)}>
+                      <option value="strawberry kiwi">Strawberry Kiwi</option>
+                      <option value="passion punch">Passion Punch</option>
+                      <option value="lemon zest">Lemon Zest</option>
                     </select>
                   </div>
                 </div>

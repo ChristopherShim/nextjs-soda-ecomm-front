@@ -1,12 +1,8 @@
-import Image from "next/image";
-import Script from "next/script";
 import { Product } from "@/models/Product";
 import { mongooseConnect } from "@/lib/mongoose";
-import { useContext, useState } from "react";
-import { CartContext } from "@/components/CartContext";
+import { useState } from "react";
 import { useRouter } from "next/router";
-import {Provider, useDispatch } from "react-redux";
-import ratingSVG from "@/assets/rating.svg";
+import { Provider } from "react-redux";
 import store from "@/store";
 import ShopLayout from "@/components/ShopPage/ShopLayout";
 
@@ -14,17 +10,13 @@ export default function productPage({ products }) {
   const router = useRouter();
   // const dispatch = useDispatch()
 
-  const [selectedItem, setSelectedItem] = useState("");
-
-
-
-  if(selectedItem){
-    router.push("/product/" + selectedItem)
-  }
+  // if (selectedItem) {
+  //   router.push("/product/" + selectedItem);
+  // }
 
   return (
     <Provider store={store}>
-      <ShopLayout products={products}/>
+      <ShopLayout products={products} />
     </Provider>
   );
 }

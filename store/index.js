@@ -3,11 +3,11 @@ import { createSlice,configureStore } from "@reduxjs/toolkit";
 const initialState = {selectedItem: ""}
 
 const selectItem = createSlice({
-    name:"chooseSelection",
+    name:"pidSelection",
     initialState,
     reducers: {
-        selectSK(state){
-            state.selectItem("6541ea9d53222b62576a57af")
+        selectPID(state){
+            state.selectedItem("6541ea9d53222b62576a57af")
         }
     }
 })

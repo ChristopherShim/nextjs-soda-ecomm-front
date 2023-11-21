@@ -2,16 +2,26 @@ import Image from "next/image";
 import ratingSVG from "@/assets/rating.svg";
 import Script from "next/script";
 import { CartContext } from "../CartContext";
-import { useContext } from "react";
-import { useDispatch } from "react-redux";
+import { useContext, useState } from "react";
+import { useRouter } from "next/router";
 
-export default function ShopLayout({products}) {
+export default function ShopLayout({ products }) {
+  const [selectedPID, setSelectedPID] = useState("");
+  const router = useRouter();
   const { addProduct } = useContext(CartContext);
-  const dispatch = useDispatch()
 
   function addItemToCart(productId) {
     addProduct(productId);
   }
+
+  function setPIDHandler(pid) {
+    setSelectedPID(pid);
+  }
+
+    if (selectedPID) {
+    router.push("/product/" + selectedPID);
+  }
+  
   return (
     <section>
       <div className="max-w-[80rem] mx-auto p-[0.5rem] py-[60px]">
@@ -72,7 +82,7 @@ export default function ShopLayout({products}) {
                 <div className="flex basis-[45%] p-0 mb-[1.2rem] max-w-[44rem]">
                   <div className="max-w-full flex relative w-full">
                     <select
-                      onChange={(e) => setSelectedItem(e.target.value)}
+                      onChange={(e) => setPIDHandler(e.target.value)}
                       className=" w-full h-[2.5rem] border-solid border-[1px] border-[#444]] rounded-[60px] px-[1rem] bg-[#29292a]"
                     >
                       {products.map((p) => (
