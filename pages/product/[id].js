@@ -6,23 +6,31 @@ import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";
 import { useContext, useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import { Link } from "next/link";
 
-export default function ProductPage({product}) {
-  const router = useRouter()
-  const [optionValue, setOptionValue] = useState(product.title)
+export default function ProductPage({ product }) {
+  const router = useRouter();
+  const [optionValue, setOptionValue] = useState(product.title);
   const { addProduct } = useContext(CartContext);
 
   function addItemToCart(productId) {
     addProduct(productId);
   }
 
-  // if (optionValue === "strawberry kiwi"){
-  //   router.push("/product/" + "6541ea9d53222b62576a57af");
-  // } else if(optionValue === "passion punch"){
-  //   router.push("/product/" + "6541ebb69d3ea6230a181415");
-  // } else {
-  //   router.push("/product/" + "6541ebc39d3ea6230a18141b");
-  // }
+useEffect(()=>{
+ if (optionValue === "strawberry kiwi"){
+    router.replace("/product/6541ea9d53222b62576a57af");
+  } else if(optionValue === "passion punch"){
+    router.replace("/product/6541ebb69d3ea6230a181415");
+  } else if(optionValue === "lemon zest") {
+    router.replace("/product/6541ebc39d3ea6230a18141b");
+  }
+
+  console.log(product.title)
+  
+},[optionValue])
+
+
 
   return (
     <section>
@@ -83,7 +91,11 @@ export default function ProductPage({product}) {
               <div className="flex justify-between my-[1.5rem]">
                 <div className="flex basis-[45%] p-0 mb-[1.2rem] max-w-[44rem]">
                   <div className="max-w-full flex relative w-full">
-                    <select className=" w-full h-[2.5rem] border-solid border-[1px] border-[#444]] rounded-[60px] px-[1rem] bg-[#29292a]" onChange={e => setOptionValue(e.target.value)}>
+                    <select
+                      className=" w-full h-[2.5rem] border-solid border-[1px] border-[#444]] rounded-[60px] px-[1rem] bg-[#29292a]"
+                      value={optionValue}
+                      onChange={(e) => setOptionValue(e.target.value)}
+                    >
                       <option value="strawberry kiwi">Strawberry Kiwi</option>
                       <option value="passion punch">Passion Punch</option>
                       <option value="lemon zest">Lemon Zest</option>
@@ -91,7 +103,13 @@ export default function ProductPage({product}) {
                   </div>
                 </div>
               </div>
-              <button onClick={()=>addItemToCart(product._id)} className="button-primary"> Add To Cart</button>
+              <button
+                onClick={() => addItemToCart(product._id)}
+                className="button-primary"
+              >
+                {" "}
+                Add To Cart
+              </button>
             </div>
           </div>
         </div>
@@ -100,13 +118,13 @@ export default function ProductPage({product}) {
   );
 }
 
-export async function getServerSideProps(context){
- await mongooseConnect();
- const {id} = context.query;
- const product = await Product.findById(id);
- return {
-  props:{
-    product: JSON.parse(JSON.stringify(product)),
-  }
- }
+export async function getServerSideProps(context) {
+  await mongooseConnect();
+  const { id } = context.query;
+  const product = await Product.findById(id);
+  return {
+    props: {
+      product: JSON.parse(JSON.stringify(product)),
+    },
+  };
 }
