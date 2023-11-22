@@ -1,18 +1,11 @@
 import { Product } from "@/models/Product";
 import { mongooseConnect } from "@/lib/mongoose";
-import { useState } from "react";
 import { useRouter } from "next/router";
 import { Provider } from "react-redux";
 import store from "@/store";
 import ShopLayout from "@/components/ShopPage/ShopLayout";
 
 export default function productPage({ products }) {
-  const router = useRouter();
-  // const dispatch = useDispatch()
-
-  // if (selectedItem) {
-  //   router.push("/product/" + selectedItem);
-  // }
 
   return (
     <Provider store={store}>

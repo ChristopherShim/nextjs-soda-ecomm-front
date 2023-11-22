@@ -4,9 +4,8 @@ import { CartContext } from "@/components/CartContext";
 import ratingSVG from "@/assets/rating.svg";
 import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState, useEffect, useLayoutEffect } from "react";
 import { useRouter } from "next/router";
-import { Link } from "next/link";
 
 export default function ProductPage({ product }) {
   const router = useRouter();
@@ -17,20 +16,20 @@ export default function ProductPage({ product }) {
     addProduct(productId);
   }
 
-useEffect(()=>{
- if (optionValue === "strawberry kiwi"){
-    router.replace("/product/6541ea9d53222b62576a57af");
-  } else if(optionValue === "passion punch"){
-    router.replace("/product/6541ebb69d3ea6230a181415");
-  } else if(optionValue === "lemon zest") {
-    router.replace("/product/6541ebc39d3ea6230a18141b");
-  }
+  console.log(product.title);
+  console.log(optionValue)
 
-  console.log(product.title)
-  
-},[optionValue])
-
-
+  useEffect(() => {
+    if (optionValue === "Strawberry Kiwi") {
+      router.replace("/product/6541ea9d53222b62576a57af");
+    }
+    if (optionValue === "Passion Punch") {
+      router.replace("/product/6541ebb69d3ea6230a181415");
+    }
+    if (optionValue === "Lemon Zest") {
+      router.replace("/product/6541ebc39d3ea6230a18141b");
+    }
+  }, [optionValue]);
 
   return (
     <section>
@@ -40,6 +39,7 @@ useEffect(()=>{
             <div>
               <img
                 src={product.images}
+                alt={product.title}
                 className="h-[500px] w-full object-contain"
               ></img>
             </div>
@@ -93,12 +93,13 @@ useEffect(()=>{
                   <div className="max-w-full flex relative w-full">
                     <select
                       className=" w-full h-[2.5rem] border-solid border-[1px] border-[#444]] rounded-[60px] px-[1rem] bg-[#29292a]"
-                      value={optionValue}
+                      // value={optionValue}
+                      defaultValue={optionValue}
                       onChange={(e) => setOptionValue(e.target.value)}
                     >
-                      <option value="strawberry kiwi">Strawberry Kiwi</option>
-                      <option value="passion punch">Passion Punch</option>
-                      <option value="lemon zest">Lemon Zest</option>
+                      <option value="Strawberry Kiwi">Strawberry Kiwi</option>
+                      <option value="Passion Punch">Passion Punch</option>
+                      <option value="Lemon Zest">Lemon Zest</option>
                     </select>
                   </div>
                 </div>
