@@ -15,11 +15,11 @@ export default function HomePage({product}){
         <HomeProduct product={product}/>
         <Slider/>
         <HomeBenefits/>
-        <HomeCompare/>
-        <HomeShop/>
-        <HomeFaq/>
-        <HomeCTA/>
-        <HomePromise/>
+        {/* <HomeCompare/> */}
+        {/* <HomeShop/> */}
+        {/* <HomeFaq/> */}
+        {/* <HomeCTA/> */}
+        {/* <HomePromise/> */}
         </>
     )
 }

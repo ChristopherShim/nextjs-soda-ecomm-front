@@ -3,7 +3,8 @@ import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 
 export default function CartPage() {
-  const { cartProducts, addProduct, removeProduct, clearCart } = useContext(CartContext);
+  const { cartProducts, addProduct, removeProduct, clearCart } =
+    useContext(CartContext);
   const [products, setProducts] = useState([]);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -12,7 +13,7 @@ export default function CartPage() {
   const [streetAddress, setStreetAddress] = useState("");
   const [streetAddress2, setStreetAddress2] = useState("");
   const [country, setCountry] = useState("");
-  const [isSuccess, setIsSuccess] = useState(false)
+  const [isSuccess, setIsSuccess] = useState(false);
 
   useEffect(() => {
     if (cartProducts?.length > 0) {
@@ -24,15 +25,15 @@ export default function CartPage() {
     }
   }, [cartProducts]);
 
-  useEffect(()=>{
-    if (typeof window === 'undefined'){
+  useEffect(() => {
+    if (typeof window === "undefined") {
       return;
     }
-    if(window?.location.href.includes('success')){
-      setIsSuccess(true)
+    if (window?.location.href.includes("success")) {
+      setIsSuccess(true);
       clearCart();
     }
-  },[])
+  }, []);
 
   function increaseCartProduct(id) {
     addProduct(id);
@@ -42,11 +43,17 @@ export default function CartPage() {
     removeProduct(id);
   }
 
-  async function goToPayment(){
-    const res = await axios.post('/api/checkout', {
-      name,email,city,postalCode,streetAddress,country,cartProducts,
+  async function goToPayment() {
+    const res = await axios.post("/api/checkout", {
+      name,
+      email,
+      city,
+      postalCode,
+      streetAddress,
+      country,
+      cartProducts,
     });
-    if (res.data.url){
+    if (res.data.url) {
       window.location = res.data.url;
     }
   }
@@ -56,11 +63,12 @@ export default function CartPage() {
     const price = products.find((p) => p._id === productId)?.price || 0;
     total += price;
   }
-  if(isSuccess){
+  if (isSuccess) {
     return (
       <>
-      <div>Thanks for your order</div></>
-    )
+        <div>Thanks for your order</div>
+      </>
+    );
   }
 
   return (
@@ -82,7 +90,6 @@ export default function CartPage() {
                   {products.map((product) => (
                     <tr>
                       <td>
-                        
                         <div className="productImageBox">
                           <img src={product.images}></img>
                         </div>
@@ -105,9 +112,10 @@ export default function CartPage() {
                       </td>
                       <td>
                         $
-                        {(product.price *
-                          cartProducts.filter((id) => id === product._id)
-                            .length).toFixed(2)}
+                        {(
+                          product.price *
+                          cartProducts.filter((id) => id === product._id).length
+                        ).toFixed(2)}
                       </td>
                     </tr>
                   ))}

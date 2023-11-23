@@ -19,13 +19,13 @@ export default function HomeProduct({ product }) {
   return (
     <section>
       <div className="mx-auto py-24 px-14 max-w-[1200px] m">
-        <div className="px-14">
-          <ul className="grid grid-cols-3 gap-[28px]">
+        <div className="px-4 md:px-14">
+          <ul className="grid grid-rows-3 gap-[200px] md:grid-rows-none md:grid-cols-3 md:gap-[28px]">
             {product.map((p) => (
               <li key={p._id} className="w-full">
                 <div className="border-solid border-2 border-[#444444] rounded-3xl bg-gradient-to-t from-[#1D1D1F] to-[#323236]">
                   <div className="mx-[2rem]">
-                    <div className="mt-[-75px] mb-[-40px] pb-[20%]">
+                    <div className="mt-[-120px] mb-[-20px] pb-[20%] md:mt-[-75px] md:mb-[-40px]">
                       <img
                         src={p.images}
                         alt={p.title}
