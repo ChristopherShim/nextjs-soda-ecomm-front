@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import { CartContext } from "../CartContext";
 import { useRouter } from "next/router";
-import Link from "next/link";
+import Image from "next/image";
 
 export default function HomeProduct({ product }) {
   const { addProduct } = useContext(CartContext);
@@ -26,11 +26,11 @@ export default function HomeProduct({ product }) {
                 <div className="border-solid border-2 border-[#444444] rounded-3xl bg-gradient-to-t from-[#1D1D1F] to-[#323236]">
                   <div className="mx-[2rem]">
                     <div className="mt-[-120px] mb-[-20px] pb-[20%] md:mt-[-75px] md:mb-[-40px]">
-                      <img
+                      <Image
                         src={p.images}
                         alt={p.title}
                         className="block object-cover h-full w-[175px] m-auto"
-                      ></img>
+                      ></Image>
                     </div>
                   </div>
                   <div className="px-[px] py-4 mx-auto inset-x-0 text-center">

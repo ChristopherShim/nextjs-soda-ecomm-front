@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <section>
@@ -43,17 +45,17 @@ export default function Footer() {
               <div>
                 <ul>
                   <li className="mb-[0.5rem]">
-                    <a href="/">Home</a>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <a href="/">Shop</a>
+                    <Link href="/product">Shop</Link>
                   </li>
                 </ul>
               </div>
               <div>
                 <ul>
                   <li>
-                    <a href="/">Contact</a>
+                    <Link href="/">Contact</Link>
                   </li>
                 </ul>
               </div>
