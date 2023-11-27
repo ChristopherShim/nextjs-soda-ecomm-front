@@ -1,5 +1,5 @@
 import { CartContext } from "@/components/CartContext";
-import { useContext, useEffect, useState } from "react";
+import { Fragment, useContext, useEffect, useState } from "react";
 import axios from "axios";
 
 export default function CartPage() {
@@ -65,9 +65,9 @@ export default function CartPage() {
   }
   if (isSuccess) {
     return (
-      <>
-        <div>Thanks for your order</div>
-      </>
+      <section className="px-[1rem] md:px-0">
+        <div className="w-full mx-auto text-center border-solid rounded-lg border-[1px] py-[10rem] px-[2rem] font-monument md:px-[5rem] md:w-[30rem]">Thanks for your order! <br/> You will receive an email receipt shortly.</div>
+      </section>
     );
   }
 
@@ -88,7 +88,7 @@ export default function CartPage() {
                 </thead>
                 <tbody>
                   {products.map((product) => (
-                    <tr>
+                    <tr key={product._id}>
                       <td>
                         <div className="productImageBox">
                           <img src={product.images}></img>

@@ -13,8 +13,8 @@ export default function HomeBenefits(){
                   className="relative m-auto items-center z-3 text-center flex w-[50vw] h-[900px]"
                   style={{ position: "relative", inset: "0px auto auto 0px" }}
                 >
-                  <Image src={SopopIcon} className="absolute h-[700px] w-[500px] z-1 left-[calc(50%-250px)] top-[calc(50%-500px)]"></Image>
-                  <Image src={SopopGroupIMG} className="z-10 w-[550px] m-auto"></Image>
+                  <Image src={SopopIcon} alt="Sopop Icon" className="absolute h-[700px] w-[500px] z-1 left-[calc(50%-250px)] top-[calc(50%-500px)]"></Image>
+                  <Image src={SopopGroupIMG} alt="Sopop Cans" className="z-10 w-[550px] m-auto"></Image>
                 </div>
               </div>
     

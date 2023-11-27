@@ -16,6 +16,7 @@ export default function Nav() {
     <header className="relative justify-between flex mx-auto top-4 z-40 inset-x-0 items-center mb-10 md:max-w-[1500px] px-[1rem]">
       <Image
         src={SopopLogo}
+        alt="Sopop Logo"
         className="h-full w-[100px] object-contain"
       ></Image>
       <nav className="items-center border-solid border-2 border-[#777777] rounded-full p-[2px]">

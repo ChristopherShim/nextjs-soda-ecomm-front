@@ -45,15 +45,15 @@ export default function HomeCompare() {
                         <g
                           id="check"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                         >
                           <circle
                             id="Ellipse-1001"
                             stroke="#DEE885"
-                            stroke-width="1.5"
-                            fill-rule="nonzero"
+                            strokeWidth="1.5"
+                            fillRule="nonzero"
                             cx="16"
                             cy="16"
                             r="15.25"
@@ -61,10 +61,10 @@ export default function HomeCompare() {
                           <polyline
                             id="Vector-1007"
                             stroke="#DEE885"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            fill-rule="nonzero"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            fillRule="nonzero"
                             transform="translate(16.9508, 15.0678) rotate(41.6335) translate(-16.9508, -15.0678)"
                             points="18.9061253 10.2511727 18.9061253 19.8844487 14.9955567 19.5949648"
                           />
@@ -76,11 +76,11 @@ export default function HomeCompare() {
                         <g
                           id="x"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fillRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <g
                             id="Group-6-Copy-2"
@@ -98,11 +98,11 @@ export default function HomeCompare() {
                         <g
                           id="x"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fillRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <g
                             id="Group-6-Copy-2"
@@ -124,15 +124,15 @@ export default function HomeCompare() {
                         <g
                           id="check"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                         >
                           <circle
                             id="Ellipse-1001"
                             stroke="#DEE885"
-                            stroke-width="1.5"
-                            fill-rule="nonzero"
+                            strokeWidth="1.5"
+                            fillRule="nonzero"
                             cx="16"
                             cy="16"
                             r="15.25"
@@ -140,10 +140,10 @@ export default function HomeCompare() {
                           <polyline
                             id="Vector-1007"
                             stroke="#DEE885"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            fill-rule="nonzero"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            fillRule="nonzero"
                             transform="translate(16.9508, 15.0678) rotate(41.6335) translate(-16.9508, -15.0678)"
                             points="18.9061253 10.2511727 18.9061253 19.8844487 14.9955567 19.5949648"
                           />
@@ -155,11 +155,11 @@ export default function HomeCompare() {
                         <g
                           id="x"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fillRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <g
                             id="Group-6-Copy-2"
@@ -177,11 +177,11 @@ export default function HomeCompare() {
                         <g
                           id="x"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fillRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <g
                             id="Group-6-Copy-2"
@@ -203,15 +203,15 @@ export default function HomeCompare() {
                         <g
                           id="check"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                         >
                           <circle
                             id="Ellipse-1001"
                             stroke="#DEE885"
-                            stroke-width="1.5"
-                            fill-rule="nonzero"
+                            strokeWidth="1.5"
+                            fillRule="nonzero"
                             cx="16"
                             cy="16"
                             r="15.25"
@@ -219,10 +219,10 @@ export default function HomeCompare() {
                           <polyline
                             id="Vector-1007"
                             stroke="#DEE885"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            fill-rule="nonzero"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            fillRule="nonzero"
                             transform="translate(16.9508, 15.0678) rotate(41.6335) translate(-16.9508, -15.0678)"
                             points="18.9061253 10.2511727 18.9061253 19.8844487 14.9955567 19.5949648"
                           />
@@ -234,11 +234,11 @@ export default function HomeCompare() {
                         <g
                           id="x"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fillRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <g
                             id="Group-6-Copy-2"
@@ -256,11 +256,11 @@ export default function HomeCompare() {
                         <g
                           id="x"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fillRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <g
                             id="Group-6-Copy-2"
@@ -282,15 +282,15 @@ export default function HomeCompare() {
                         <g
                           id="check"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                         >
                           <circle
                             id="Ellipse-1001"
                             stroke="#DEE885"
-                            stroke-width="1.5"
-                            fill-rule="nonzero"
+                            strokeWidth="1.5"
+                            fillRule="nonzero"
                             cx="16"
                             cy="16"
                             r="15.25"
@@ -298,10 +298,10 @@ export default function HomeCompare() {
                           <polyline
                             id="Vector-1007"
                             stroke="#DEE885"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            fill-rule="nonzero"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            fillRule="nonzero"
                             transform="translate(16.9508, 15.0678) rotate(41.6335) translate(-16.9508, -15.0678)"
                             points="18.9061253 10.2511727 18.9061253 19.8844487 14.9955567 19.5949648"
                           />
@@ -313,11 +313,11 @@ export default function HomeCompare() {
                         <g
                           id="x"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fillRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <g
                             id="Group-6-Copy-2"
@@ -335,11 +335,11 @@ export default function HomeCompare() {
                         <g
                           id="x"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fillRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <g
                             id="Group-6-Copy-2"
@@ -361,15 +361,15 @@ export default function HomeCompare() {
                         <g
                           id="check"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                         >
                           <circle
                             id="Ellipse-1001"
                             stroke="#DEE885"
-                            stroke-width="1.5"
-                            fill-rule="nonzero"
+                            strokeWidth="1.5"
+                            fillRule="nonzero"
                             cx="16"
                             cy="16"
                             r="15.25"
@@ -377,10 +377,10 @@ export default function HomeCompare() {
                           <polyline
                             id="Vector-1007"
                             stroke="#DEE885"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            fill-rule="nonzero"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            fillRule="nonzero"
                             transform="translate(16.9508, 15.0678) rotate(41.6335) translate(-16.9508, -15.0678)"
                             points="18.9061253 10.2511727 18.9061253 19.8844487 14.9955567 19.5949648"
                           />
@@ -392,11 +392,11 @@ export default function HomeCompare() {
                         <g
                           id="x"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fillRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <g
                             id="Group-6-Copy-2"
@@ -414,11 +414,11 @@ export default function HomeCompare() {
                         <g
                           id="x"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fillRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <g
                             id="Group-6-Copy-2"
@@ -440,15 +440,15 @@ export default function HomeCompare() {
                         <g
                           id="check"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                         >
                           <circle
                             id="Ellipse-1001"
                             stroke="#DEE885"
-                            stroke-width="1.5"
-                            fill-rule="nonzero"
+                            strokeWidth="1.5"
+                            fillRule="nonzero"
                             cx="16"
                             cy="16"
                             r="15.25"
@@ -456,10 +456,10 @@ export default function HomeCompare() {
                           <polyline
                             id="Vector-1007"
                             stroke="#DEE885"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            fill-rule="nonzero"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            fillRule="nonzero"
                             transform="translate(16.9508, 15.0678) rotate(41.6335) translate(-16.9508, -15.0678)"
                             points="18.9061253 10.2511727 18.9061253 19.8844487 14.9955567 19.5949648"
                           />
@@ -471,11 +471,11 @@ export default function HomeCompare() {
                         <g
                           id="x"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fillRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <g
                             id="Group-6-Copy-2"
@@ -493,11 +493,11 @@ export default function HomeCompare() {
                         <g
                           id="x"
                           stroke="none"
-                          stroke-width="1"
+                          strokeWidth="1"
                           fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          fillRule="evenodd"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <g
                             id="Group-6-Copy-2"

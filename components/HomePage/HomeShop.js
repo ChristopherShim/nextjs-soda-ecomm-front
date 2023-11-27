@@ -11,6 +11,7 @@ export default function HomeShop() {
             <div>
               <Image
                 src={SopopWallpaper}
+                alt="Sopop Wallpaper"
                 className="h-[250px] w-full object-cover md:h-[100%]"
               ></Image>
             </div>

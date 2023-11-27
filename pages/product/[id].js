@@ -44,7 +44,7 @@ export default function ProductPage({ product }) {
           <div className="md:max-w-[55%] md:w-[55%] md:pl-[5rem]">
             <div className="max-w-[60rem] px-[1rem]">
               <div >
-                <Image src={ratingSVG}></Image>
+                <Image src={ratingSVG} alt="Star Rating SVG"></Image>
               </div>
               <div className="my-[1.5rem]">
                 <h1 className="text-[32px] font-monument md:text-[56px] w-[50%]">{product.title}</h1>

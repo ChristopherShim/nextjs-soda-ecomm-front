@@ -10,6 +10,7 @@ export default function HomePromise() {
             <div className=" h-full md:min-h-[200px]">
               <Image
                 src={SopopGraphic}
+                alt="Sopop Graphic"
                 className="h-full object-contain w-full"
               ></Image>
             </div>
