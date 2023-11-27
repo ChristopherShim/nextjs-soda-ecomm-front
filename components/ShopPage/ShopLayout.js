@@ -28,10 +28,10 @@ export default function ShopLayout({ products }) {
         <div className="flex flex-col p-0 gap-0 m-0 md:flex-row">
           <div className="mb-[4rem] md:mb-0w-full justify-center md:max-w-[45%] md:w-[45%]">
             <div>
-              <img
+              <Image
                 src={products[0].images}
                 className="h-[200px] md:h-[500px] w-full object-contain"
-              ></img>
+              ></Image>
             </div>
           </div>
           <div className="md:max-w-[55%] md:w-[55%] md:pl-[5rem]">
