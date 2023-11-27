@@ -7,8 +7,7 @@
 @font-face{
   font-family:"monument";
   font-weight: 400;
-  font-display:optional;
-  src:url("../assets/monument.otf") format("otf")
+  src:url("../assets/monument.otf")
 }
 
 :root {
