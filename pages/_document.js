@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link 
         rel="preload"
-        href="../assets/monument.otf"
+        href="/assets/monument.otf"
         as="font"
         type="font/otf"
         crossOrigin='anonymous'
