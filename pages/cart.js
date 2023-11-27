@@ -33,7 +33,7 @@ export default function CartPage() {
       setIsSuccess(true);
       clearCart();
     }
-  }, []);
+  });
 
   function increaseCartProduct(id) {
     addProduct(id);
