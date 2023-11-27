@@ -26,7 +26,7 @@ export default function ProductPage({ product }) {
     if (optionValue === "Lemon Zest") {
       router.replace("/product/6541ebc39d3ea6230a18141b");
     }
-  }, [optionValue, router]);
+  }, [optionValue]);
 
   return (
     <section>
