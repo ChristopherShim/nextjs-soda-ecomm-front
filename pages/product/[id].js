@@ -26,7 +26,7 @@ export default function ProductPage({ product }) {
     if (optionValue === "Lemon Zest") {
       router.replace("/product/6541ebc39d3ea6230a18141b");
     }
-  }, [optionValue]);
+  }, [optionValue, router]);
 
   return (
     <section>
@@ -34,11 +34,11 @@ export default function ProductPage({ product }) {
         <div className="flex flex-col p-0 gap-0 m-0 md:flex-row">
           <div className="mb-[4rem] md:mb-0 w-full justify-center md:max-w-[45%] md:w-[45%]">
             <div>
-              <Image
+              <img
                 src={product.images}
                 alt={product.title}
                 className="h-[200px] md:h-[500px] w-full object-contain"
-              ></Image>
+              ></img>
             </div>
           </div>
           <div className="md:max-w-[55%] md:w-[55%] md:pl-[5rem]">
