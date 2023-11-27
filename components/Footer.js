@@ -2,10 +2,10 @@ export default function Footer() {
   return (
     <section>
       <footer className="pb-[60px]">
-        <div className="flex justify-between max-w-[92rem] pb-[5rem] px-[15rem] mx-auto">
+        <div className="flex flex-col justify-between max-w-[92rem] pb-[5rem] md:px-[15rem] mx-auto md:flex-row px-[1rem]">
           <div className="mt-[3rem]">
-            <p className="uppercase">get on the list</p>
-            <h2 className="text-[48px] mt-[1rem] mb-[3rem]">
+            <p className=" font-monument text-[1rem]">get on the list</p>
+            <h2 className="text-[1.5rem] mt-[1rem] mb-[3rem] font-monument">
               Quench your thirst.
             </h2>
             <form className="flex-start m-0 max-w-[36rem] flex flex-col">
@@ -37,7 +37,7 @@ export default function Footer() {
               </div>
             </form>
           </div>
-          <div className="mt-[3rem]">
+          <div className="mt-[3rem] font-monument">
             <p className="my-[1rem] font-bold">Sopop</p>
             <div className="flex flex-wrap gap-[6rem]">
               <div>
@@ -52,9 +52,6 @@ export default function Footer() {
               </div>
               <div>
                 <ul>
-                  <li className="mb-[0.5rem]">
-                    <a href="/">Account</a>
-                  </li>
                   <li>
                     <a href="/">Contact</a>
                   </li>
@@ -65,7 +62,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t-[0.1rem]">
-          <div className="flex justify-between gap-[20px] max-w-[92rem] px-[15rem] mb-[1rem] mt-[2rem] mx-auto">
+          <div className="flex flex-col-reverse justify-between gap-[20px] max-w-[92rem] px-[1rem] md:px-[15rem] mb-[1rem] mt-[2rem] mx-auto md:flex-row">
             <div>
               <p className="text-[.75rem]">
                 Statements relating to caffeine content are based on one can of

@@ -73,8 +73,8 @@ export default function CartPage() {
 
   return (
     <>
-      <div className="max-w-[900px] m-auto">
-        <div className="grid grid-cols-[1.3fr_minmax(300px,_.7fr)] gap-4 text-black">
+      <div className="max-w-[900px] m-auto px-[1rem] md:px-0">
+        <div className="grid md:grid-cols-[1.3fr_minmax(300px,_.7fr)] gap-4 text-black">
           <div className="bg-white rounded-md p-[30px]">
             {!cartProducts?.length && <div>Your cart is empty</div>}
             {products?.length > 0 && (

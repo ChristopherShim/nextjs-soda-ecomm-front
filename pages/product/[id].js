@@ -34,30 +34,30 @@ export default function ProductPage({ product }) {
   return (
     <section>
       <div className="max-w-[80rem] mx-auto p-[0.5rem] py-[60px]">
-        <div className="flex flex-wrap p-0 gap-0 m-0">
-          <div className="max-w-[45%] w-[45%]">
+        <div className="flex flex-col p-0 gap-0 m-0 md:flex-row">
+          <div className="mb-[4rem] md:mb-0 w-full justify-center md:max-w-[45%] md:w-[45%]">
             <div>
               <img
                 src={product.images}
                 alt={product.title}
-                className="h-[500px] w-full object-contain"
+                className="h-[200px] md:h-[500px] w-full object-contain"
               ></img>
             </div>
           </div>
-          <div className="max-w-[55%] w-[55%] pl-[5rem]">
-            <div className="max-w-[60rem]">
+          <div className="md:max-w-[55%] md:w-[55%] md:pl-[5rem]">
+            <div className="max-w-[60rem] px-[1rem]">
               <div>
                 <Image src={ratingSVG}></Image>
               </div>
               <div className="my-[1.5rem]">
-                <h1 className="text-[56px]">{product.title}</h1>
+                <h1 className="text-[32px] font-monument md:text-[56px]">{product.title}</h1>
               </div>
               <div className="my-[1.5rem]">
                 Experience new flavors - 5x better than competing brands. Each
                 can contains 20mg of natural caffeine from natural ingredients
                 providing natural flavors.
               </div>
-              <div className="flex w-full justify-between pr-[10%] items-center flex-wrap my-[1.5rem]">
+              <div className="flex w-full justify-between md:pr-[10%] text-left flex-col my-[1.5rem] md:flex-row md:items-center">
                 <Script src="https://kit.fontawesome.com/4d06b44541.js" />
 
                 <div>
@@ -88,8 +88,8 @@ export default function ProductPage({ product }) {
                   </p>
                 </div>
               </div>
-              <div className="flex justify-between my-[1.5rem]">
-                <div className="flex basis-[45%] p-0 mb-[1.2rem] max-w-[44rem]">
+              <div className="md:flex justify-between my-[1.5rem]">
+                <div className="flex md:basis-[45%] p-0 mb-[1.2rem] max-w-[44rem]">
                   <div className="max-w-full flex relative w-full">
                     <select
                       className=" w-full h-[2.5rem] border-solid border-[1px] border-[#444]] rounded-[60px] px-[1rem] bg-[#29292a]"
@@ -106,7 +106,7 @@ export default function ProductPage({ product }) {
               </div>
               <button
                 onClick={() => addItemToCart(product._id)}
-                className="button-primary"
+                className="button-primary flex mx-auto md:inline-flex"
               >
                 {" "}
                 Add To Cart

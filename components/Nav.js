@@ -13,7 +13,7 @@ export default function Nav() {
   const inactiveLink = "rounded-[50px] px-[15px] py-[9px] text-white";
   const activeLink = "rounded-[50px] px-[15px] py-[9px] bg-[#C6A1DC] text-black";
   return (
-    <header className="relative justify-between flex mx-auto top-4 z-40 inset-x-0 items-center mb-10 md:max-w-[1500px]">
+    <header className="relative justify-between flex mx-auto top-4 z-40 inset-x-0 items-center mb-10 md:max-w-[1500px] px-[1rem]">
       <Image
         src={SopopLogo}
         className="h-full w-[100px] object-contain"

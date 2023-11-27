@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
     <CartContextProvider>
       <Nav />
       <Component {...pageProps} />
-      {/* <Footer/> */}
+      <Footer/>
       </CartContextProvider>
     </>
   );

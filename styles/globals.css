@@ -63,12 +63,11 @@ body {
   font-size: 4rem;
 }
 
-#right-container p{
-  font-size: 1.25rem;
+/* #right-container p{
   line-height: 2rem;
   margin-top:1rem;
   margin-bottom:1rem;
-}
+} */
 
 #pill-shape{
   width:fit-content
@@ -85,7 +84,7 @@ body {
 .pill {
   border: solid;
   border-width: 2px;
-  border-color: #000;
+  border-color: #DEE885;
   border-radius: 20px;
   padding: 5px 15px;
   white-space: nowrap;
@@ -124,16 +123,16 @@ body {
   
 }
 
-.homeCompare td:nth-child(3),td:nth-child(4){
+/* .homeCompare td:nth-child(3),td:nth-child(4){
   filter: invert(100%);
-}
+} */
 
 .homeCompare tr td:nth-child(1){
   font-weight: 700;
 }
 
 .homeCompare tr:last-child .highlight{
-  border-radius: 0 0 30px 30px;
+  border-radius: 0 0 30px 30px ;
 }
 
 .homeCompare tr:last-child td{
@@ -155,17 +154,17 @@ body {
 }
 
 
-.homeCompare tr td:nth-child(2) img{
+.homeCompare tr td:nth-child(2) svg{
   display:block;
   margin:0 auto;
 }
 
-.homeCompare tr td:nth-child(3) img{
+.homeCompare tr td:nth-child(3) svg{
   display:block;
   margin:0 auto;
 }
 
-.homeCompare tr td:nth-child(4) img{
+.homeCompare tr td:nth-child(4) svg{
   display:block;
   margin:0 auto;
 }
@@ -180,18 +179,17 @@ body {
 }
 
 .button-primary{
-  display: inline-flex;
   justify-content: center;
   align-items: center;
   border: 0;
   padding: 0 3rem;
   text-decoration: none;
   background-color: #C6A1DC;
-  font-size:1.5rem;
   min-height: calc(3.5rem + 1px);
   min-width: calc(1rem + 1px * 2);
   border-radius: 60px;
   color:black;
+  font-family: monument;
 }
 
 .button-black{
@@ -202,7 +200,6 @@ body {
   padding: 0 3rem;
   text-decoration: none;
   background-color: black;
-  font-size:1.25rem;
   min-height: calc(3.5rem + 1px);
   min-width: calc(1rem + 1px * 2);
   border-radius: 60px;
@@ -275,4 +272,3 @@ body {
   border-radius:5px;
   box-sizing:border-box
 }
-
