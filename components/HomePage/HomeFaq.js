@@ -92,7 +92,7 @@ export default function HomeFaq() {
                 <p>
                   If you would like to purchase individual cans, you may visit
                   participating retailers such as Walmart, Target and CVS.
-                  Online, we only offer 8-packs because we believe you wont
+                  Online, we only offer 8-packs because we believe you won\'t
                   just want one.
                 </p>
               </div>}
