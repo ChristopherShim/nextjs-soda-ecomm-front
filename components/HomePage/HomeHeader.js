@@ -1,15 +1,15 @@
 import Script from "next/script";
-import {Monument} from "@/assets/monument.otf"
+// import {Monument} from "@/assets/monument.otf"
 
 export default function HomeHeader() {
 
-  const monument = Monument({
-    variable: '--monument-font'
-  })
+  // const monument = Monument({
+  //   variable: '--monument-font'
+  // })
 
   return (
     <section className="text-7xl mx-auto text-center w-full pt-[100px] pb-[76px] text-white">
-      <div className={monument.className}>
+      <div className="font-monument">
         <h1 className="leading-tight text-2xl md:text-[64px]">The New Pop,</h1>
         <h1 className="leading-tight text-2xl md:text-[64px]">
           <Script src="https://kit.fontawesome.com/4d06b44541.js" />
