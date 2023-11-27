@@ -16,9 +16,6 @@ export default function ProductPage({ product }) {
     addProduct(productId);
   }
 
-  console.log(product.title);
-  console.log(optionValue)
-
   useEffect(() => {
     if (optionValue === "Strawberry Kiwi") {
       router.replace("/product/6541ea9d53222b62576a57af");
@@ -46,11 +43,11 @@ export default function ProductPage({ product }) {
           </div>
           <div className="md:max-w-[55%] md:w-[55%] md:pl-[5rem]">
             <div className="max-w-[60rem] px-[1rem]">
-              <div>
+              <div >
                 <Image src={ratingSVG}></Image>
               </div>
               <div className="my-[1.5rem]">
-                <h1 className="text-[32px] font-monument md:text-[56px]">{product.title}</h1>
+                <h1 className="text-[32px] font-monument md:text-[56px] w-[50%]">{product.title}</h1>
               </div>
               <div className="my-[1.5rem]">
                 Experience new flavors - 5x better than competing brands. Each

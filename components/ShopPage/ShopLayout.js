@@ -39,7 +39,7 @@ export default function ShopLayout({ products }) {
               <div>
                 <Image src={ratingSVG}></Image>
               </div>
-              <div className="my-[1.5rem]">
+              <div className="my-[1.5rem] w-[50%]">
                 <h1 className="text-[32px] font-monument md:text-[56px]">
                   {products[0].title}
                 </h1>
