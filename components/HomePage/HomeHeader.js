@@ -1,5 +1,5 @@
 import Script from "next/script";
-import {Monument} from "next/font/local"
+import {Monument} from "@next/font/local"
 
 export default function HomeHeader() {
 
