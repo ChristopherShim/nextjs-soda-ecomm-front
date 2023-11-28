@@ -32,7 +32,7 @@ function consolePimages(p){
                     <button
                       // href={url+p._id}
                       onClick={() => goToProductHandler(p)}
-                      className="shopLink text-lg text-center text-black"
+                      className="shopLink text-base text-center text-black md:text-lg"
                     >
                       {p.title}
                     </button>
