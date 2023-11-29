@@ -21,16 +21,46 @@
   }
 }
 
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 body {
   color: white;
   background: #1D1D1F;
    
 }
 
-/* h1,h2,h3,h4,h5,h6{
-  font-size:inherit;
-  font-weight:inherit;
-} */
+.text-wrapper{
+  display:flex;
+  justify-content: flex-start;
+  overflow: hidden;
+
+}
+
+.text-wrapper p{
+  font-size:1rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding:0 2rem;
+}
+
+.text-slider{
+  animation: move-rtl 15000ms linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes move-rtl{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform:translateX(-1420px)
+  }
+}
 
 .shopLink {
   border-radius: 40px;
@@ -42,18 +72,12 @@ body {
 }
 
 .sliderGradient{
-  background-image: linear-gradient(to right, #E1C7BD,#C6A1DC,#DEE885)
+  background-image: linear-gradient(to right, #E1C7BD,#C6A1DC,#DEE885);
+  height:75px;
+  display: flex;
+  align-items: center;
 }
 
-.slider-li{
-  float: left;
-  width: 150px;
-  height: 75px;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  text-transform: uppercase
-}
 
 #right-container h2{
   margin-top:3rem;
@@ -61,11 +85,6 @@ body {
   font-size: 4rem;
 }
 
-/* #right-container p{
-  line-height: 2rem;
-  margin-top:1rem;
-  margin-bottom:1rem;
-} */
 
 #pill-shape{
   width:fit-content
@@ -269,4 +288,38 @@ body {
   border: 1px solid #ccc;
   border-radius:5px;
   box-sizing:border-box
+}
+
+#sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 70px;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.extra,
+#wrapper {
+  margin: auto;
+  background-color: #F2F1EA;
+}
+#wrapper {
+  height: 800px;
+  width:50%
+}
+.extra {
+  height: 100px;
+}
+body {
+  font-family: georgia;
+  height: 1000px;
+}
+h4 {
+  text-align: center;
+}
+@media (min-height: 768px) {
+  #wrapper{
+    height: 2750px;
+  }
 }
