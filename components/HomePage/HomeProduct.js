@@ -24,6 +24,7 @@ function consolePimages(p){
                       <img
                         src={p.images}
                         alt={p.title}
+                        loading="eager"
                         className="block object-cover h-full w-[175px] m-auto"
                       ></img>
                     </div>
